@@ -36,10 +36,10 @@
                     </a>
                 </div>
                 <div class="price">
-                  <p>Start at <br /><span><?php the_field('price')?></span></p>
-                  
+                   <p>Start at <br /><span><?php the_field('price')?></span></p>
                 </div>
               </div>
+              <button class ="btnAddtoCart">Add to Cart</button>
             </div>
             <?php endwhile;
                 else :
@@ -94,6 +94,7 @@
                   
                 </div>
               </div>
+              <button class ="btnAddtoCart">Add to Cart</button>
             </div>
             <?php endwhile;
                 else :
@@ -147,6 +148,7 @@
                   
                 </div>
               </div>
+              <button class ="btnAddtoCart">Add to Cart</button>
             </div>
             <?php endwhile;
                 else :
@@ -200,6 +202,7 @@
                   
                 </div>
               </div>
+              <button class ="btnAddtoCart">Add to Cart</button>
             </div>
             <?php endwhile;
                 else :
@@ -212,5 +215,20 @@
         </div>
       </div>
 </section>
+
+<div class="cart">
+  <h3>Cart</h3>
+  <button class="cart_close"><i class ="fas fa-times"></i></button>
+  <div class="cart__wrapper">
+    <!-- <div class="cartItem">
+      <img src="http://localhost/jollibee/wp-content/uploads/2023/06/bseller-3.png" alt="">
+      <div>
+        <h3>Jollibee - Title One</h3>
+        <p>Php  120.00</p>
+      </div>
+      <button><i class ="fas fa-times"></i></button>
+    </div> -->
+  </div>
+</div>
     
 <?php get_footer() ?>

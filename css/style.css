@@ -949,3 +949,238 @@ button {
 .card__wrapper .grid{
   min-height: 11rem;
 }
+
+.menu ul{
+  display:flex;
+  gap:10px
+}
+
+.menu ul a{
+  color:white;
+  padding: 4px 6px;
+}
+
+.menu ul li.current_page_item a{
+  background:#F09400;
+}
+
+.cta{
+  min-height: 650px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0,0,0,0.9),
+    rgba(0,0,0,0)),
+    url("https://www.rappler.com/tachyon/2022/07/Jollibee-SLEX-December-16-2019-10.jpg");
+    background-size:cover;
+    background-position: center -100px;
+  }
+
+  .cta__wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    min-height: 600px;
+    max-width: 540px;
+    width:100%;
+    color:#fff
+  }
+
+  .cta__wrapper h3{
+    font-size: clamp(20px, 10vw, 40px);
+    margin-bottom:20px;
+  }
+  .cta__Wrapper p{
+    font-size: 16px;
+  }
+
+  .cta__wrapper button{
+    max-width: 150px;
+    width: 100%;
+    padding: 12px 16px;
+    background-color: #F09400;
+    color:#fff;
+    text-transform: uppercase;
+    cursor:pointer;
+    border:none;
+    border-radius: 5px;
+  }
+
+  .modal{
+    position:fixed;
+    width: 100vw;
+    height: 100%;
+    top:0;
+    left:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+  }
+
+  .modal.show{
+    display:flex;
+  }
+
+  .backdrop{
+    position:absolute;
+    height:inherit;
+    width: inherit;
+    background-color: rgba(0,0,0,0.8);
+    z-index: -1;
+  }
+
+  .modal__main{
+    background-color: #fff;
+    padding: 20px;
+    max-width:400px;
+    width:100%;
+  }
+
+  .modal__header{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .modal__header button{
+    background-color:transparent;
+    cursor:pointer;
+    font-size:18px;
+    border:none;
+    transform: translateY(-10px)
+  }
+
+  .form__group{
+    margin-bottom:20px
+  }
+
+  .form__group label,
+  .form__group input{
+    width: 100%;
+    display:block;
+  }
+
+  .form__group input,
+  .form__group textarea{
+    width:100%;
+    padding: 10px 16px;
+    border: 1px solid #e6e6e6;
+    margin-top: 5px;
+    border-radius: 5px;
+    outline:none;
+  }
+
+  .form__group input:focus,
+  .form__group textarea:focus{
+    border-color: #e3163c;
+  }
+
+  .form__group textarea{
+    height: 200px;
+    resize: none;
+  }
+
+  input[type="submit"]{
+    padding: 10px 16px;
+    background-color: #F09400;
+    border-radius: 5px;
+    color: #fff;
+    border:none;
+    cursor:pointer;
+  }
+
+  .cart{
+    position:fixed;
+    width:300px;
+    height: 100vh;
+    padding: 4rem;
+    top: 0;
+    right: -300px;
+    z-index:999;
+    background-color: white;
+    box-shadow: -5px 10px 10px 2px rgba(0,0,0,0.04);
+    transition: .5s ease-in-out;
+  }
+  .cart.open{
+    right: 0;
+  }
+  .cart_close{
+    position:absolute;
+    top:50px;
+    right:10px;
+  }
+
+  .cartItem{
+    display:flex;
+    align-items: flex-start;
+    gap:2rem;
+    position:relative;
+  }
+
+  .cartItem img{
+    width:60px;
+    heigt: 60px;
+    object-fit:cover;
+    object-positon: center center;
+  }
+
+  .cartItem button{
+    position:absolute;
+    top:30%;
+    left:-15px;
+    transform: translateY(-50%);
+    background:red;
+    width:20px;
+    height:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    border:none;
+    color:#fff;
+  }
+
+  .btnAddtoCart{
+    display:block;
+    text-align:center;
+    margin-top:5px;
+    padding:10px 16px;
+    background-color: #F09400;
+    color:#fff;
+    border-radius:5px;
+    border:none;
+    width:100%;
+  }
+
+  .header__nav{
+    display:flex;
+    align-items: center;
+    gap:30px;
+  }
+
+  .header__nav button{
+    background-color:transparent;
+    border:none;
+    color:#fff;
+    font-size:20px;
+  }
+
+
+  .btnCart {
+    position: relative;
+  }
+  
+  .btnCart .count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+    border-radius: 50%;
+    color: #fff;
+    z-index: 9999;
+    background-color: #f09400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

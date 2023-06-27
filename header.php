@@ -23,7 +23,7 @@
               'theme_location' => 'header_menu',
 
             ));?>
-
+            <button class="btnCart"><span class="count"></span><i class ="fas fa-cart-shopping"></i></button>
           </div>
         </div>
       </div>
