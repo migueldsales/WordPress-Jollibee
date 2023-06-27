@@ -1180,7 +1180,8 @@ button {
     color: #fff;
     z-index: 9999;
     background-color: #f09400;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
+    
   }

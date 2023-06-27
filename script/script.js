@@ -24,6 +24,11 @@ btnAddtoCarts.forEach((btn)=> {
     // when - click button - puntahan parent then select
     // click continously... array
     cartArr.push(cartInfo)
+    if (cartArr.length !== 0) {
+      count.style.display = "flex";
+      count.textContent = cartArr.length
+    }
+
     count.textContent=cartArr.length
 
     const cartItem = document.createElement('div');

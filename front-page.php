@@ -112,7 +112,7 @@
         <div class="food__header flex justify--between align--center">
           <h2>Chicken Joy</h2>
           <span></span>
-          <a href="#">View All</a>
+          <a href="<?php echo site_url('./chicken-joy')?>">View All</a>
         </div>
       </div>
       <div class="container with--overflow">
