@@ -1,5 +1,14 @@
 <?php get_header() ?>
-<section class="food py--3">
+
+
+<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+<?php the_content() ?>
+<?php endwhile;
+      else:
+          echo "no more posts";
+      endif;
+  ?>
+<!-- <section class="food py--3">
       <div class="container">
         <div class="food__header flex justify--between align--center">
           <h2>Best Seller</h2>
@@ -214,21 +223,20 @@
           </div>
         </div>
       </div>
-</section>
+</section> -->
 
 <div class="cart">
-  <h3>Cart</h3>
-  <button class="cart_close"><i class ="fas fa-times"></i></button>
-  <div class="cart__wrapper">
-    <!-- <div class="cartItem">
-      <img src="http://localhost/jollibee/wp-content/uploads/2023/06/bseller-3.png" alt="">
-      <div>
-        <h3>Jollibee - Title One</h3>
-        <p>Php  120.00</p>
-      </div>
-      <button><i class ="fas fa-times"></i></button>
-    </div> -->
+  <div>
+    <h3>Cart</h3>
+    <button class="cart_close"><i class ="fas fa-times"></i></button>
+    <div class="cart__wrapper">
+    </div>
   </div>
-</div>
+    <ul class >
+      <li>Total</li>
+      <li id="total"></li>
+    </ul>
+  </div>
+</div> 
     
 <?php get_footer() ?>
