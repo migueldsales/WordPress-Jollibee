@@ -28,12 +28,14 @@
             </p>
 
             <h3>Options</h3>
-            <form action="">
-              <ul class="flex">
-                <li><input type="radio" name="option" /> Solo</li>
-                <li><input type="radio" name="option" /> With Drinks</li>
-              </ul>
-            </form>
+            <ul>
+            <?php
+              $options =  get_field('addons') ?>
+                  
+              <?php foreach( $options as $option): ?>
+                  <li><input type="checkbox" /> <?php echo $option; ?></li>
+              <?php endforeach; ?>
+            </ul>
 
             <div class="action">
               <h2>₱ <?php the_field('price')?>.00</h2>
